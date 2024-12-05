@@ -12,7 +12,7 @@ table {
     text-align: center;
     display: flex; /* Flex for table */
     flex-direction: column;
-    margin: 20px 0; /* Add vertical spacing */
+    margin: 20px 0; /* Add vertical spacing */ 
 }
 
 td, th {
