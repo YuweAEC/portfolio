@@ -1,8 +1,8 @@
-h1{
+h1 {
     color: red;
     font-size: 50px; 
 }
-h2{
+h2 {
     color: rgb(166, 255, 0);
     font-size: 40px;
 }
@@ -10,9 +10,7 @@ table {
     width: 50%;
     border-collapse: collapse;
     text-align: center;
-    display: flex; /* Flex for table */
-    flex-direction: column;
-    margin: 20px 0; /* Add vertical spacing */ 
+    margin: 20px 0;
 }
 
 td, th {
@@ -32,4 +30,57 @@ tr {
 #green {
     background-color: green;
     color: white;
+}
+
+.div1 {
+    position: relative;
+    top: 20px; 
+    left: 10px; 
+    background: red;
+}
+
+#div2 {
+    position: absolute;
+    top: 20px; 
+    left: 10px; 
+}
+
+.div3 {
+    position: fixed;
+    top: 20px; 
+    left: 10px; 
+}
+
+#div4 {
+    position: sticky;
+    top: 20px;
+    left: 10px; 
+}
+
+.div5 {
+    position: static;
+}
+
+#ask-me {
+    position: sticky;
+    top: 50%;
+    right: 0;
+    background-color: yellow;
+    padding-left: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.parent > *{
+    font-size: 40px;
+    background-color: rgb(0, 255, 55);
+
+}
+
+.parent p:nth-child(2) {
+    color: red; /* Styles the second child */
+}
+
+.parent p:nth-child(4) {
+    color: blue; /* Styles the fourth child */
 }
