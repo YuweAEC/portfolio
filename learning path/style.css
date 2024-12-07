@@ -1,11 +1,39 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: turquoise;
+}
+
 h1 {
     color: red;
-    font-size: 50px; 
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
 }
+
 h2 {
     color: rgb(166, 255, 0);
     font-size: 40px;
+    font-style: italic;
+    letter-spacing: 2px;
 }
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+    overflow-wrap: break-word;
+}
+
+img {
+    border: 5px solid gray;
+    border-radius: 15px;
+    margin: 10px 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 table {
     width: 50%;
     border-collapse: collapse;
@@ -16,49 +44,17 @@ table {
 td, th {
     border: 1px solid rgb(255, 255, 255);
     padding: 10px;
+    font-size: 18px;
 }
 
-tr {
+tr:nth-child(even) {
     background-color: rgb(0, 111, 130);
 }
 
-.red {
-    background-color: coral;
-    color: rgb(20, 20, 20);
-}
-
-#green {
-    background-color: green;
-    color: white;
-}
-
-.div1 {
-    position: relative;
-    top: 20px; 
-    left: 10px; 
-    background: red;
-}
-
-#div2 {
-    position: absolute;
-    top: 20px; 
-    left: 10px; 
-}
-
-.div3 {
-    position: fixed;
-    top: 20px; 
-    left: 10px; 
-}
-
-#div4 {
-    position: sticky;
-    top: 20px;
-    left: 10px; 
-}
-
-.div5 {
-    position: static;
+.div-cls {
+    padding: 10px;
+    margin: 10px;
+    border: 2px dashed #333;
 }
 
 #ask-me {
@@ -71,16 +67,17 @@ tr {
     font-weight: bold;
 }
 
-.parent > *{
-    font-size: 40px;
-    background-color: rgb(0, 255, 55);
-
+.parent > p:nth-child(2) {
+    color: red;
+    font-style: italic;
 }
 
-.parent p:nth-child(2) {
-    color: red; /* Styles the second child */
+.parent > p:nth-child(4) {
+    color: blue;
+    font-variant: small-caps;
 }
 
-.parent p:nth-child(4) {
-    color: blue; /* Styles the fourth child */
+.parent > p:nth-child(1) {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
 }
