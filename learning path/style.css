@@ -12,6 +12,7 @@ h1 {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    display: inline; /* Switched from block to inline */
 }
 
 h2 {
@@ -19,12 +20,14 @@ h2 {
     font-size: 40px;
     font-style: italic;
     letter-spacing: 2px;
+    display: inline; /* Switched from block to inline */
 }
 
 p {
     text-align: justify;
     text-indent: 20px;
     overflow-wrap: break-word;
+    display: block; /* Ensuring consistency for paragraphs */
 }
 
 img {
@@ -32,6 +35,7 @@ img {
     border-radius: 15px;
     margin: 10px 0;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: block; /* Switched from inline to block */
 }
 
 table {
@@ -39,12 +43,14 @@ table {
     border-collapse: collapse;
     text-align: center;
     margin: 20px 0;
+    display: block; /* Switched from inline to block */
 }
 
 td, th {
     border: 1px solid rgb(255, 255, 255);
     padding: 10px;
     font-size: 18px;
+    display: inline-block; /* Switched from block to inline */
 }
 
 tr:nth-child(even) {
@@ -55,6 +61,7 @@ tr:nth-child(even) {
     padding: 10px;
     margin: 10px;
     border: 2px dashed #333;
+    display: inline-block; /* Switched from block to inline */
 }
 
 #ask-me {
@@ -65,19 +72,34 @@ tr:nth-child(even) {
     padding-left: 10px;
     color: black;
     font-weight: bold;
+    display: block; /* Explicitly setting to block */
 }
 
 .parent > p:nth-child(2) {
     color: red;
     font-style: italic;
+    display: block; /* Switched from inline to block */
 }
 
 .parent > p:nth-child(4) {
     color: blue;
     font-variant: small-caps;
+    display: inline; /* Switched from block to inline */
 }
 
-.parent > p:nth-child(1) {
-    color: rgb(255, 255, 255);
-    font-weight: bolder;
+/* Change inline element (span) to block */
+.inline-to-block {
+    display: block; /* Converts the inline element into block */
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px 0;
+    width: 50%;
+    text-align: center;
+}
+
+/* Change block element (div) to inline */
+.block-to-inline {
+    display: inline; /* Converts the block element into inline */
+    background-color: lightgreen;
+    padding: 5px;
 }
