@@ -1,28 +1,32 @@
 /* General Page Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: poppins, sans-serif;
+    background-image: url('https://images.wallpapersden.com/image/download/playerunknown-s-battlegrounds-4k-halloween_bWxtZmuUmZqaraWkpJRobWllrWdma2U.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    color: rgb(61, 0, 0);
 }
 
 /* Form Container */
 main {
-    background: white;
+    background: rgba(255, 112, 112, 0.8); /* Semi-transparent white background */
     padding: 20px;
     border-radius: 10px;
     width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
     text-align: center;
 }
 
 h1 {
     font-size: 22px;
     margin-bottom: 15px;
-    color: #444;
+    color: #333;
 }
 
 /* Form Styles */
@@ -35,6 +39,7 @@ form {
 label {
     font-size: 14px;
     text-align: left;
+    color: #333;
 }
 
 input, select, textarea, button {
@@ -45,18 +50,28 @@ input, select, textarea, button {
     width: 100%;
 }
 
+/* Textarea styling */
 textarea {
     resize: none;
 }
 
+/* Button Styling */
 button {
     background-color: #007BFF;
     color: white;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+/* Input Focus Effect */
+input:focus, select:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
 }
