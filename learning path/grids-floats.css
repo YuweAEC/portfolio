@@ -35,7 +35,10 @@ header {
             gap: 20px;
             margin: 20px;
         }
-
+div h1{
+    color:red;
+    
+}
         .grid-container div {
             background-color: #d0d0d0;
             padding: 20px;
