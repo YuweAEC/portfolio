@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Page</title>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="rwd.css">
+    </head>
+
+    <body>
+        <header id="hero">
+            <nav id="navbar">
+                <a href="#about" class="navbar-link">About</a>
+                <a href="#features" class="navbar-link">Features</a>
+                <a href="#contact" class="navbar-link">Contact</a>
+            </nav>
+            <div class="hero-content">
+                <h1>Welcome to MySite</h1>
+                <p>Responsive design made simple</p>
+            </div>
+        </header>
+
+        <main>
+            <!-- Grid Layout Section -->
+            <section id="about" class="grid-section">
+                <div>
+                    <h2>About Us</h2>
+                    <p>We build responsive and accessible websites for modern users.</p>
+                </div>
+                <img src="https://img.freepik.com/free-photo/colorful-design-with-spiral-design_188544-9588.jpg" alt="About Image">
+            </section>
+
+            <!-- Responsive Image -->
+            <section id="features" class="image-section">
+                <h2>Responsive Images</h2>
+                <img class="responsive-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVEll8uICS2xqheOz2l1Vh1DcvpEyxgVrNfw&s" alt="Responsive Example">
+            </section>
+
+            <!-- Responsive Video -->
+            <section id="videos" class="video-section">
+                <h2>Responsive Videos</h2>
+                <video class="responsive-video" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+            <h2>Contact Us</h2>
+            <ul>
+                <li><a href="https://github.com/yuweaec" target="_blank">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/enthusiaticyuwe" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:yuwe18b@gmail.com">Email Us</a></li>
+            </ul>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <p>&copy; 2024 MySite</p>
+        </footer>
+    </body>
+
+</html>

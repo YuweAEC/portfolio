@@ -1,0 +1,138 @@
+    /* General Reset */
+    *{
+        border: #333;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+    }
+    
+    /* Navbar */
+    #navbar {
+        background-color: #007bff;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .navbar-link {
+        color: white;
+        margin: 0 1rem;
+        text-decoration: none;
+    }
+    
+    /* Hero Section */
+    #hero {
+        background: url('https://t3.ftcdn.net/jpg/02/70/35/00/360_F_270350073_WO6yQAdptEnAhYKM5GuA9035wbRnVJSr.jpg') no-repeat center center / cover;
+        color: white;
+        text-align: center;
+        padding: 4rem 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+    
+    /* Grid Layout Section */
+    .grid-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 2rem;
+        background: #fff;
+    }
+    
+    .grid-section img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    
+    /* Responsive Image */
+    .image-section {
+        text-align: center;
+        padding: 2rem;
+        background: #f8f8f8;
+    }
+    
+    .responsive-img {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+    }
+    
+    /* Responsive Video */
+    .video-section {
+        text-align: center;
+        padding: 2rem;
+        background: #fff;
+    }
+    
+    .responsive-video {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+    }
+    
+    /* Contact Section */
+    #contact {
+        text-align: center;
+        padding: 2rem;
+        background: #f8f8f8;
+    }
+    
+    #contact ul {
+        list-style: none;
+    }
+    
+    #contact li {
+        margin: 10px 0;
+    }
+    
+    #contact a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    /* Footer */
+    #footer {
+        text-align: center;
+        padding: 1rem;
+        background: #333;
+        color: white;
+    }
+    
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+        #hero {
+        padding: 2rem 1rem;
+        }
+    
+        .hero-content h1 {
+        font-size: 2rem;
+        }
+    
+        .grid-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+        }
+    
+        .navbar-link {
+        display: block;
+        margin: 10px 0;
+        }
+    }
+    
